@@ -104,13 +104,11 @@ export default function TextForm(props) {
         <p>
           Word Count :{" "}
           {
-            text.split(" ").filter((element) => {
+            text.split(/\s+/).filter((element) => {
               return element.length !== 0;
             }).length
           }{" "}
-          | Character Count : {text.length} | Sentence Count :{" "}
-          {text.split(".").length - 1} | Line Count :{" "}
-          {text.split("\n").length - 1}
+          | Character Count : {text.length}
         </p>
         <h2>Preview</h2>
         <p>
