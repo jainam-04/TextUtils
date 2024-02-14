@@ -46,20 +46,20 @@ function App() {
   };
   return (
     <>
-      <Navbar
-        title="TextUtils"
-        mode={mode}
-        toggleMode={toggleMode}
-        aboutText="About"
-        text={text}
-        toggleGreenButton={toggleGreenButton}
-        toggleGreyButton={toggleGreyButton}
-        toggleRedButton={toggleRedButton}
-        toggleLightBlueButton={toggleLightBlueButton}
-      />
-      <Alert alert={alert} />
       <div className="container my-3">
         <Router>
+        <Navbar
+          title="TextUtils"
+          mode={mode}
+          toggleMode={toggleMode}
+          aboutText="About"
+          text={text}
+          toggleGreenButton={toggleGreenButton}
+          toggleGreyButton={toggleGreyButton}
+          toggleRedButton={toggleRedButton}
+          toggleLightBlueButton={toggleLightBlueButton}
+        />
+      <Alert alert={alert} />
           <Routes>
             <Route exact path="/about" element={<About mode={mode}/>}></Route>
             <Route
