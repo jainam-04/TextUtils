@@ -46,7 +46,7 @@ function App() {
   };
   return (
     <>
-      <div className="container my-3">
+      <div>
         <Router>
         <Navbar
           title="TextUtils"
