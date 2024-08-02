@@ -42,6 +42,11 @@ export default function TextForm(props) {
     navigator.clipboard.writeText(copyText);
     props.showAlert("Copied to clipboard!!", "success");
   }
+  const handleReverseClick = () => {
+    const reverseText = text.split("").reverse().join("");
+    setText(reverseText);
+    props.showAlert("Text is reversed!!", "success");
+  }
   const [text, setText] = useState("");
   return (
     <>
@@ -105,6 +110,13 @@ export default function TextForm(props) {
             onClick={handleCopyClick}
           >
             Copy text
+          </button>
+          <button
+            disabled={text.length === 0}
+            className="btn btn-primary mx-1 my-1"
+            onClick={handleReverseClick}
+          >
+            Reverse text
           </button>
         </div>
       </div>
