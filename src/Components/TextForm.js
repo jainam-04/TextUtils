@@ -37,6 +37,11 @@ export default function TextForm(props) {
     setText(alternateText);
     props.showAlert("Converted to alternate case", "success");
   };
+  const handleCopyClick = () => {
+    const copyText = text;
+    navigator.clipboard.writeText(copyText);
+    props.showAlert("Copied to clipboard!!", "success");
+  }
   const [text, setText] = useState("");
   return (
     <>
@@ -93,6 +98,13 @@ export default function TextForm(props) {
             onClick={handleAlternateClick}
           >
             Convert to alternate case
+          </button>
+          <button
+            disabled={text.length === 0}
+            className="btn btn-primary mx-1 my-1"
+            onClick={handleCopyClick}
+          >
+            Copy text
           </button>
         </div>
       </div>
