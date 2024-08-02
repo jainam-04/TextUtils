@@ -32,18 +32,6 @@ function App() {
       showAlert("Light mode has been enabled", "success");
     }
   };
-  const toggleGreenButton = () => {
-    document.body.style.backgroundColor = "green";
-  };
-  const toggleGreyButton = () => {
-    document.body.style.backgroundColor = "grey";
-  };
-  const toggleRedButton = () => {
-    document.body.style.backgroundColor = "red";
-  };
-  const toggleLightBlueButton = () => {
-    document.body.style.backgroundColor = "#0dcaf0";
-  };
   return (
     <>
       <div>
@@ -54,10 +42,6 @@ function App() {
           toggleMode={toggleMode}
           aboutText="About"
           text={text}
-          toggleGreenButton={toggleGreenButton}
-          toggleGreyButton={toggleGreyButton}
-          toggleRedButton={toggleRedButton}
-          toggleLightBlueButton={toggleLightBlueButton}
         />
       <Alert alert={alert} />
           <Routes>
