@@ -73,3 +73,9 @@ Follow these steps to set up the project locally:
 2. Input your text in the text box provided.
 3. Use the buttons below to perform text transformations such as converting cases, reversing text, etc.
 4. Toggle between light and dark modes using the switch in the top-right corner.
+
+---
+
+## Acknowledgments
+- This project was built as part of React.js learning.
+- Special thanks to open-source tools and resources that made development easier.
