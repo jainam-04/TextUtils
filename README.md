@@ -83,3 +83,6 @@ Follow these steps to set up the project locally:
 ## Acknowledgments
 - This project was built as part of React.js learning.
 - Special thanks to open-source tools and resources that made development easier.
+
+## Live Demo
+https://text-utils-two-phi.vercel.app/
